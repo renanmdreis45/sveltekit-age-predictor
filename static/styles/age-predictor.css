@@ -1,0 +1,103 @@
+:global(body) {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f7fa;
+        margin: 0;
+        padding: 0;
+        color: #333;
+        line-height: 1.6;
+    }
+    
+    .container {
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        color: #2c3e50;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .subtitle {
+        text-align: center;
+        color: #7f8c8d;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .input-container {
+        position: relative;
+        margin-bottom: 2rem;
+    }
+    
+    input {
+        width: 100%;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+        box-sizing: border-box;
+    }
+    
+    input:focus {
+        outline: none;
+        border-color: #3498db;
+    }
+    
+    .spinner {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border: 3px solid rgba(52, 152, 219, 0.3);
+        border-radius: 50%;
+        border-top-color: #3498db;
+        animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+        to { transform: translateY(-50%) rotate(360deg); }
+    }
+    
+    .result, .no-result, .loading, .error {
+        padding: 1rem;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+    
+    .result {
+        background-color: #e8f7f0;
+        border-left: 4px solid #2ecc71;
+    }
+    
+    .no-result {
+        background-color: #f9eae7;
+        border-left: 4px solid #e74c3c;
+    }
+    
+    .loading {
+        background-color: #e3f2fd;
+        border-left: 4px solid #3498db;
+    }
+    
+    .error {
+        background-color: #fde8e8;
+        border-left: 4px solid #ef4444;
+    }
+    
+    .count {
+        font-size: 0.8rem;
+        color: #7f8c8d;
+        margin-top: 0.5rem;
+    }
+    
+    strong {
+        color: #2c3e50;
+    }
